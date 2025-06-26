@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prediction Result</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='result.css') }}" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header d-flex align-items-center shadow-sm px-4">
+    <img src="{{ url_for('static', filename='bloodcell_logo.jpg') }}" alt="HematoVision Logo" class="logo me-3">
+    <h1 class="mb-0">HematoVision</h1>
+  </header>
+
+  <div class="container mt-5 text-center">
+    <div class="result-box p-4 rounded shadow">
+      <h3 class="text-danger">Prediction Result</h3>
+      <p class="fs-5 mt-3">Predicted Class: <strong>{{ class_label }}</strong></p>
+      <img src="data:image/png;base64,{{ img_data }}" alt="Uploaded Cell Image" class="img-fluid rounded border mt-3" style="max-height: 300px;">
+      <div class="mt-4">
+        <a href="{{ url_for('upload_file') }}" class="btn btn-outline-danger">Upload Another Image</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
