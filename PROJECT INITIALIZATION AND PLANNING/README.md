@@ -10,8 +10,8 @@ The following official documents are included in the `/docs` folder:
 
 | Document Name              | Description                                  |
 |---------------------------|----------------------------------------------|
-| `Problem_Statement.docx`  | Defines the medical problem and motivation   |
-| `Project_Planning.docx`   | Outlines the timeline, technologies, and scope |
-| `Project_Proposal.docx`   | Details methodology, architecture, and goals |
+| `Problem_Statement.pdf`  | Defines the medical problem and motivation   |
+| `Project_Planning.pdf`   | Outlines the timeline, technologies, and scope |
+| `Project_Proposal.pdf`   | Details methodology, architecture, and goals |
 
 ---
