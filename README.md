@@ -86,8 +86,8 @@ HematoVision
 
 ---
 
-📄 License
+<p align="center">📄 License
 This project is for academic and educational use only.
-© 2025 HematoVision Team. All rights reserved.
+© 2025 HematoVision Team. All rights reserved.</p>
 
 <p align="center"> Made with ❤️ by the HematoVision Team </p> 
