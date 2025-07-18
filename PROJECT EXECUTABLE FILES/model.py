@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
-data_dir = r'C:\Users\balap\Downloads\blood_cells\dataset2-master\dataset2-master\images\TRAIN'
+data_dir = r'blood_cells\dataset2-master\dataset2-master\images\TRAIN'
 
 class_labels = ['eosinophil', 'lymphocyte', 'monocyte', 'neutrophil']
 
@@ -70,7 +70,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 train_datagen = ImageDataGenerator(preprocessing_function=preprocess_input)
 
 
-train_dir = r'C:\Users\balap\Downloads\blood_cells\dataset2-master\dataset2-master\images\TRAIN'
+train_dir = r'blood_cells\dataset2-master\dataset2-master\images\TRAIN'
 
 
 train = train_datagen.flow_from_directory(
@@ -209,4 +209,4 @@ plt.title("Confusion Matrix")
 plt.show()
 
 
-model.save(r"C:\Users\balap\vscode programs\Blood-cell\Blood_cell.h5")
+model.save(r"Blood_cell.h5")
