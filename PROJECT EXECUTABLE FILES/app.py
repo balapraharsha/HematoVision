@@ -10,7 +10,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 os.makedirs("static", exist_ok=True)
 
-model = load_model(r"C:\Users\balap\vscode programs\Blood-cell\Blood_cell.h5")
+model = load_model(r"blood_cell.h5")
 class_labels = ['eosinophil', 'lymphocyte', 'monocyte', 'neutrophil']
 
 def predict_image_class(image_path, model):
